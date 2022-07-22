@@ -23,7 +23,8 @@ public class UserService {
     private static final String urlLogin = "http://"
             +Api.SERVER_NAME+":"
             +Api.SERVER_PORT
-            +"/LoginRegister/signup.php";
+            +"/login.php";
+    //http://localhost:8083/login.php
     private OkHttpClient okHttpClient = new OkHttpClient();
     public void login (String userName, String password, IUserResponse userResponse) {
         //newCall is "async"
